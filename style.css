@@ -1,0 +1,79 @@
+ body{
+    background-color: black;
+}
+* {
+    margin: 0px;
+    padding: 0px ;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+     /* background-color: azure; */
+} 
+.conteneur{
+    width: 100%;
+    min-height: 100v;
+    padding:10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background-color: pink;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+   padding: 10px;
+   font-weight: 40px;
+}
+
+#addToDo{
+padding: 10px;
+font-size: 10px;
+left: 20px;
+border-radius: 20px;
+color: white;
+background: pink;
+}
+#removeToDo{
+    padding: 10px;
+font-size: 10px;
+    margin-left: 30px;
+    border-radius: 20px;
+color: white;
+background: pink;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 13px 12px 10px 50px;
+    position: relative;
+} 
+ul li ::before{
+    content: " ";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    top: 30px;
+    left: 10px;
+} 
